@@ -12,8 +12,8 @@ def search_command(
     for movie in movies:
         title = movie['title']
 
-        query_tokens = _text_tokenization(query)
-        title_tokens = _text_tokenization(movie['title'])
+        query_tokens = text_tokenization(query)
+        title_tokens = text_tokenization(movie['title'])
 
         if _has_matching_token(query_tokens, title_tokens):
             results.append(movie)
@@ -27,7 +27,7 @@ def _preprocess_text(text: str) -> str:
     text = text.translate(str.maketrans("", "", string.punctuation))
     return text
 
-def _text_tokenization(text: str) -> list[str]:
+def text_tokenization(text: str) -> list[str]:
     preprocessed_text = _preprocess_text(text)
     tokens = [token for token in preprocessed_text.strip().split(" ") if token.strip()]
     filtered_tokens = _remove_stopwords(tokens)

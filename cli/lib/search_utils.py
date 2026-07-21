@@ -39,6 +39,8 @@ GOLDEN_DATASET_PATH = os.path.join(PROJECT_ROOT, "data", "golden_dataset.json")
 STOPWORDS_PATH = os.path.join(PROJECT_ROOT, "data", "stopwords.txt")
 
 CACHE_DIR = os.path.join(PROJECT_ROOT, "cache")
+INDEX_DIR = os.path.join(CACHE_DIR, "index.pkl")
+DOC_MAP_DIR = os.path.join(CACHE_DIR, "docmap.pkl")
 
 DEFAULT_CHUNK_SIZE = 200
 DEFAULT_CHUNK_OVERLAP = 1
