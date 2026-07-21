@@ -10,4 +10,7 @@ wheels/
 .venv
 
 # Dummy data for testing
-data 
+data
+
+#Local only dirs
+cache/
