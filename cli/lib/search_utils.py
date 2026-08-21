@@ -41,6 +41,8 @@ STOPWORDS_PATH = os.path.join(PROJECT_ROOT, "data", "stopwords.txt")
 CACHE_DIR = os.path.join(PROJECT_ROOT, "cache")
 INDEX_PATH = os.path.join(CACHE_DIR, "index.pkl")
 DOC_MAP_PATH = os.path.join(CACHE_DIR, "docmap.pkl")
+TERM_FREQ_PATH = os.path.join(CACHE_DIR, "term_frequencies.pkl")
+DOC_LENGTHS_PATH = os.path.join(CACHE_DIR,"doc_lengths.pkl")
 
 DEFAULT_CHUNK_SIZE = 200
 DEFAULT_CHUNK_OVERLAP = 1
